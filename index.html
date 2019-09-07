@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
@@ -9,26 +9,134 @@
 </head>
 <body>
 <header class="page-header">
-  <div class="page-header-menu-container">
-    <div class="logo">
-      <img src="./img/logo.svg" width="154px" height="64px">
-    </div>
-    <nav class="main-menu">
+  <nav class="main-menu">
+    <div class="page-header-menu-container">
+      <a class="logo" href="index.html">
+        <img src="./img/logo.svg" width="154" height="64" alt="logo">
+      </a>
       <ul class="menu-list">
-        <li><a href="#">Каталог</a></li>
-        <li><a href="#">Доставка и оплата</a></li>
-        <li><a href="#">О Компании</a></li>
+        <li><a href="catalog.html">Каталог</a>
+          <section>
+            <h2>Фильтр мороженого</h2>
+            <ul>
+              <li><a href=""><b>Новинки</b></a></li>
+              <li><a href="">Сливочное</a></li>
+              <li><a href="">Щербеты</a></li>
+              <li><a href="">Фруктовый лед</a></li>
+              <li><a href="">Мелорин</a></li>
+            </ul>
+          </section>
+        </li>
+        <li><a href="">Доставка и оплата</a></li>
+        <li><a href="">О Компании</a></li>
       </ul>
-    </nav>
-  </div>
+    </div>
+  </nav>
   <div>
-    <button class="user-search-button"> <img src="./img/loupe.svg"></button>
-    <button class="user-enter-button"><img src="./img/entrance.svg"><span class="description-enter-link">Вход</span></button>
-    <button class="user-basket-button"><img src="./img/basket.svg"><span class="description-enter-link">Пусто</span></button>
-  </div>
-  <main>
+    <button type="button" class="user-search-button"></button>
 
-  </main>
+    <section>
+      <h2>Поиск по сайту</h2>
+      <form>
+        <label for="input-search" hidden>поиск</label>
+        <input type="text" id="input-search" placeholder="Крем-брюле">
+      </form>
+    </section>
+
+      <button type="button" class="user-enter-button">
+        <span class="user-enter-button-icon"></span>
+        Вход
+      </button>
+
+      <section>
+        <h2>Как войти на сайт</h2>
+        <form>
+          <label for="sign-in-email">электронная почта</label>
+          <input type="email" id="sign-in-email" placeholder="email@example.com">
+          <label for="password">пароль</label>
+          <input type="password" id="password" placeholder="........">
+          <button type="submit">Войти</button>
+          <ul>
+            <li><a href="">Забыли пароль?</a></li>
+            <li><a href="">Новая регистрация</a></li>
+          </ul>
+        </form>
+      </section>
+
+    <button type="button" class="user-basket-button">
+      <span class="user-basket-button-icon"></span>
+      Пусто
+    </button>
+  </div>
 </header>
+<main>
+  <h1>Glassy Shop</h1>
+
+  <section>
+    <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
+    <ul>
+      <li>
+        <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования
+          и проверенных временем технологий.</p>
+      </li>
+      <li>
+        <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качестваю Все
+          дополнительные ингридиенты и добавки произведены из натурального экологически чистого сырья.</p>
+      </li>
+      <li>
+        <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
+          связывает долговременное сотрудничество.</p>
+      </li>
+      <li>
+        <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому
+          растаять в пути и позволяет сохранить превосходный вкус.</p>
+      </li>
+    </ul>
+  </section>
+
+  <article>
+    <p>Новое в нашем блоге</p>
+    <h2>10 способов сервировки фруктовых щербетов к столу</h2>
+  </article>
+
+  <section>
+    <h2>Подписка на рассылку</h2>
+    <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем
+      не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+    <form>
+      <label for="input-subscription" hidden>подписка</label>
+      <input type="email" id="input-subscription" placeholder="email@example.com">
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+
+  <section>
+    <h2>Мы в соцсетях</h2>
+    <ul>
+      <li><a href="">Вконтакте</a></li>
+      <li><a href="">Фейсбук</a></li>
+      <li><a href="">Инстаграм</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Дополнительная информация</h2>
+    <ul>
+      <li><a href="">Для поставщиков</a></li>
+      <li><a href="">О производстве</a></li>
+      <li><a href="">Наши документы</a></li>
+      <li><a href="">Экологические стандарты</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <p>Сделано в <a class="developer__copyright-link" href="">HTML Academy</a> &copy; 2019</p>
+  </section>
+
+</footer>
 </body>
 </html>
