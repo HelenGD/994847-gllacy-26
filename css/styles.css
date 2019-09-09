@@ -19,7 +19,7 @@ body {
   align-items: center;
 }
 
-.page-header-menu-container {
+.header-container {
   display: flex;
   align-items: center;
 }
@@ -39,7 +39,7 @@ body {
   line-height: 18px;
 }
 
-.user-search-button {
+.search-button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -57,7 +57,7 @@ body {
   background-position: center;
 }
 
-.user-enter-button {
+.enter-button {
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
@@ -78,7 +78,7 @@ body {
   cursor: pointer;
 }
 
-.user-basket-button {
+.basket-button {
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
@@ -99,7 +99,7 @@ body {
 }
 
 
-.user-enter-button-icon {
+.enter-icon {
     width: 21px;
     height: 19px;
     margin-right: 7px;
@@ -108,7 +108,7 @@ body {
     background-position: center;
 }
 
-.user-basket-button-icon {
+.basket-icon {
   width: 21px;
   height: 19px;
   margin-right: 7px;
