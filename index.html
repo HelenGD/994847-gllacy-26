@@ -11,7 +11,7 @@
   <nav class="main-menu">
     <div class="header-container">
       <div class="logo">
-        <img class="logo-img" src="./img/logo.svg" width="154" height="64" alt="logo">
+        <img class="logo-img" src="./img/logo.svg" width="154" height="64" alt="Логотип сайта Gllacy Shop">
       </div>
       <ul class="menu-list">
         <li class="item-active"><a href="" class="item-link">Каталог</a>
@@ -29,29 +29,28 @@
     </div>
   </nav>
   <div class="user-nav">
-    <button type="button" class="search-button">поиск по сайту</button>
-
+    <button type="button" class="visually-hidden search-button">поиск по сайту</button>
     <section>
       <h2 class="visually-hidden">Поиск по сайту</h2>
       <form class="search-field">
-        <label class="label-text" for="input-search" hidden>поиск</label>
+        <label class="visually-hidden" for="input-search">поиск</label>
         <input class="input-text" type="text" id="input-search" name="input-search" placeholder="Крем-брюле">
       </form>
     </section>
 
-    <button type="button" class="enter-button">
+    <button type="button" class="enter-button" aria-label="Войти на сайт">
       <span class="enter-icon"></span>
       Вход
     </button>
 
     <section>
       <h2 class="visually-hidden">Как войти на сайт</h2>
-      <form>
-        <label for="sign-in-email">электронная почта</label>
+      <form action="/" method="post">
+        <label class="visually-hidden" for="sign-in-email">электронная почта</label>
         <input type="email" id="sign-in-email" name="email" placeholder="email@example.com">
-        <label for="password">пароль</label>
+        <label class="visually-hidden" for="password">пароль</label>
         <input type="password" id="password" name="password" placeholder="********">
-        <button type="submit">Войти</button>
+        <button type="submit" aria-label="Войти на сайт">Войти</button>
         <ul>
           <li><a href="">Забыли пароль?</a></li>
           <li><a href="">Новая регистрация</a></li>
@@ -59,7 +58,7 @@
       </form>
     </section>
 
-    <button type="button" class="basket-button">
+    <button type="button" class="basket-button" aria-label="Перейти в корзину">
       <span class="basket-icon"></span>
       Пусто
     </button>
@@ -71,8 +70,9 @@
   <h1 class="visually-hidden">Gllacy Shop</h1>
 
   <section class="contacts">
+    <h2 class="visually-hidden">Контактная информация</h2>
     <p class="office-hours">С 10 до 20, ежедневно</p>
-    <a href="tel:+78124502525" class="phone">8 812 450-25-25</a>
+    <a href="tel:+78124502525" class="phone" aria-label="Номер телефона Gllacy Shop">8 812 450-25-25</a>
   </section>
 
   <section class="showcase">
@@ -80,21 +80,21 @@
     <ul class="showcase-slides">
       <li class="showcase-slide">
         <h3 class="showcase-slide">Крем-брюле и пломбир с малиновым джемом</h3>
-        <a href="">Давайте оба!</a>
+        <a href="" aria-label="Купить крем-брюле и пломбир с малиновым джемом">Давайте оба!</a>
       </li>
       <li class="showcase-slide">
         <h3 class="showcase-slide">Шоколадный пломбир и лимонный сорбет</h3>
-        <a href="">Давайте оба!</a>
+        <a href="" aria-label="Купить шоколадный пломбир и лимонный сорбет">Давайте оба!</a>
       </li>
       <li class="showcase-slide">
         <h3 class="showcase-slide">Пломбир с помадкой и клубничный щербет</h3>
-        <a href="">Давайте оба!</a>
+        <a href="" aria-label="Купить пломбир с помадкой и клубничный щербет">Давайте оба!</a>
       </li>
     </ul>
     <div>
-      <button type="button">1</button>
-      <button type="button">2</button>
-      <button type="button">3</button>
+      <button type="button" aria-label="Вы находитесь на первом слайде специальных предложений">1</button>
+      <button type="button" aria-label="Перейти на второй слайд со специальными предложениями">2</button>
+      <button type="button" aria-label="Перейти на третий слайд со специальными предложениями">3</button>
     </div>
   </section>
 
@@ -107,7 +107,7 @@
         При покупке 2 кг любого фруктового мороженого, добавим
         в ваш заказ банку малинового варенья бесплатно.
       </p>
-      <a href="">Хочу варенье!</a>
+      <a href="" aria-label="Получить банку малинового варенья в подарок">Хочу варенье!</a>
     </section>
 
     <section>
@@ -116,7 +116,7 @@
         При покупке 2 кг пломбира, добавим в ваш заказ упаковку
         вкуснейшей шоколадной присыпки совершенно бесплатно.
       </p>
-      <a href="">>Хочу шоколадки!</a>
+      <a href="" aria-label="Получить упаковку шоколадной присыпки в подарок">Хочу шоколадки!</a>
     </section>
   </section>
 
@@ -126,7 +126,7 @@
       <li>
         <span>Хит!</span>
         <div>
-          <img src="img/ice_cream_1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267"
+          <img src="img/ice_cream_1.png" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой" width="267"
                height="267">
           <p>310₽<span>/кг</span></p>
         </div>
@@ -138,7 +138,7 @@
       <li>
         <span>Хит!</span>
         <div>
-          <img src="img/ice_cream_2.png" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
+          <img src="img/ice_cream_2.png" alt="Сливочно-кофейное мороженое с кусочками шоколада" width="267" height="267">
           <p>380₽<span>/кг</span></p>
         </div>
         <a href="">
@@ -149,7 +149,7 @@
       <li>
         <span>Хит!</span>
         <div>
-          <img src="img/ice_cream_3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267"
+          <img src="img/ice_cream_3.png" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада" width="267"
                height="267">
           <p>355₽<span>/кг</span></p>
         </div>
@@ -161,7 +161,7 @@
       <li>
         <span>Хит!</span>
         <div>
-          <img src="img/ice_cream_4.png" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
+          <img src="img/ice_cream_4.png" alt="Сливочное крем-брюле мороженое с карамельной подливкой" width="267" height="267">
           <p>415₽<span>/кг</span></p>
         </div>
         <a href="">
@@ -203,8 +203,8 @@
     <h2 class="visually-hidden">Подписка на рассылку</h2>
     <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем
       не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-    <form>
-      <label for="input-subscription" hidden>подписка</label>
+    <form action="/" method="post">
+      <label class="visually-hidden" for="input-subscription">подписка на рассылку по почте</label>
       <input type="email" id="input-subscription" name="email" placeholder="email@example.com">
       <button type="submit">Отправить</button>
     </form>
@@ -212,6 +212,7 @@
 
   <section>
     <h2 class="visually-hidden">Схема проезда</h2>
+    <img src="./img/map.png" alt="Адрес главного офиса и офлайн магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1200" height="430">
     <section>
       <p>
         Адрес главного офиса<br>
@@ -228,6 +229,20 @@
     </section>
   </section>
 
+  <section>
+    <h2 class="visually-hidden">Обратная связь</h2>
+    <form action="/" method="post">
+      <strong>Мы обязательно вам ответим!</strong>
+      <label class="visually-hidden" for="user-name">имя пользователя</label>
+      <input type="text" id="user-name" name="name" placeholder="Как вас зовут?">
+      <label class="visually-hidden" for="user-email">электронная почта пользователя</label>
+      <input type="email" id="user-email" name="email" placeholder="Ваша почта для ответа?">
+      <label class="visually-hidden" for="user-comment">Комментарий от пользователя</label>
+      <input type="text" id="user-comment" name="comment" placeholder="Напишите что-нибудь...">
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+
 </main>
 
 <footer class="page-footer">
@@ -235,10 +250,10 @@
   <section>
     <h2 class="visually-hidden">Мы в соцсетях</h2>
     <ul class="social-links">
-      <li class="twitter"><a href="" class="link-tw">Twitter</a></li>
-      <li class="instagram"><a href="" class="link-inst">Instagram</a></li>
-      <li class="facebook"><a href="" class="link-fb">Facebook</a></li>
-      <li class="vkontakte"><a href="" class="link-vk">vKontakte</a></li>
+      <li class="twitter"><a href="" class="link-tw" aria-label="Gllacy Shop в Твиттере"></a></li>
+      <li class="instagram"><a href="" class="link-inst" aria-label="Gllacy Shop в Инстаграме"></a></li>
+      <li class="facebook"><a href="" class="link-fb" aria-label="Gllacy Shop в Фейсбуке"></a></li>
+      <li class="vkontakte"><a href="" class="link-vk" aria-label="Gllacy Shop во Вконтакте"></a></li>
     </ul>
   </section>
 
@@ -253,7 +268,7 @@
   </section>
 
   <section>
-    <p class="developer-copyright">Сделано в <a class="developer-link" href="">HTML Academy</a> &copy; 2019</p>
+    <p class="developer-copyright">Сделано в <a class="developer-link" href="" aria-label="Сайт HTML Academy">HTML Academy</a> &copy; 2019</p>
   </section>
 
 </footer>
