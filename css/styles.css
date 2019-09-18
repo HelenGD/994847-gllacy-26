@@ -160,26 +160,26 @@ a {
   color: #323232;
 }
 
-.bw-icons {
+.advantages-icon {
   background-size: contain;
   width: 45px;
   height: 45px;
   display: inline-flex;
 }
 
-.icon-icecream {
+.advantages-icon-icecream {
   background-image: url("../img/ice-cream.svg");
 }
 
-.icon-eco {
+.advantages-icon-eco {
   background-image: url("../img/eco.svg");
 }
 
-.icon-cow {
+.advantages-icon-cow {
   background-image: url("../img/cow.svg");
 }
 
-.icon-thermometer {
+.advantages-icon-thermometer {
   background-image: url("../img/thermometer.svg");
 }
 
@@ -198,7 +198,7 @@ a {
   line-height: 30px;
 }
 
-.newsletter {
+.subscribition {
   color: #5A5A5A;
   background-color: #F8F7F4;
 }
@@ -358,15 +358,15 @@ a {
   color: #ffffff;
 }
 
-.points-menu {
+.breadcrumbs {
   list-style: none;
 }
 
-.selected-item {
+.item-link-selected {
   background-color: #d07058;
 }
 
-.assortment-list {
+.catalog-list {
   list-style: none;
 }
 
@@ -387,7 +387,7 @@ a {
   line-height: 45px;
 }
 
-.letter-background {
+.subscribition-container {
   padding: 6px;
   background-image: url("../img/bg-post.svg");
   background-repeat: no-repeat;
