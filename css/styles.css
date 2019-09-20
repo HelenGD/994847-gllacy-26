@@ -14,6 +14,12 @@ body {
   background-color: #849d8f;
 }
 
+.page-home {
+  background-image: url(../img/slide-1.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
 input {
   font-family: Roboto, Arial,sans-serif;
   font-weight: 400;
@@ -267,6 +273,9 @@ a {
 
 .assortment-item {
   display: inline;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .social-links,
@@ -279,6 +288,10 @@ a {
 .extra-link,
 .developer-link {
   color: #ffffff;
+}
+
+.get-discount {
+  text-align: right;
 }
 
 
@@ -354,8 +367,11 @@ a {
   line-height: 24px;
 }
 
-.previous-link {
+.previous-link,
+.current-section {
   color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .breadcrumbs {
@@ -394,5 +410,214 @@ a {
   background-size: cover;
 }
 
+.showcase-slides {
+  list-style: none;
+}
 
+.showcase-slide {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 60.35px;
+  text-align: center;
+}
+
+.btn-large {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.raspberry-background {
+  background-image: url("../img/rasberry-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.chocolate-background {
+  background-image: url("../img/background-chocolate.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.stock-title {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.gift {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.store-address,
+.working-hours {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.bold-text {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.blog-link {
+  border-bottom: 1px solid #323232;
+  color: #323232;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.page-one {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #353535;
+  border-radius: 50%;
+  background-color: #fff;
+  width: 26px;
+  height: 26px;
+}
+
+.link-page {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  padding: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.link-page:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.link-page:active {
+  background: rgba(255, 255, 255, 1);
+  color: #353535;
+}
+
+.btn-small {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0);
+}
+
+.btn-active {
+  background: rgba(255, 255, 255, 1);
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.btn-small:hover {
+  background:  rgba(255, 255, 255, 0.4);
+}
+
+.btn-small:active {
+  background: rgba(255, 255, 255, 1);
+  color: #353535;
+}
+
+.filter-button {
+  background: rgba(255, 255, 255, 0.0001);
+  border: 2px solid #FFFFFF;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+.filter-button:hover {
+  color: #323232;
+  background: rgba(255, 255, 255, 1);
+}
+
+.filter-button:active {
+  background: #EDEDED;
+  box-shadow: inset 0px 2px 1px #696969;
+  color: #323232;
+  border: none;
+}
+
+.pin {
+  background-image: url("../img/pin.svg");
+  width: 79px;
+  height: 78.5px;
+  display: inline-flex;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon-right {
+  background-image: url("../img/icon-right-small.svg");
+  background-position: center;
+  display: inline-flex;
+  background-repeat: no-repeat;
+  width: 7px;
+  height: 12px;
+}
+
+.hit-list {
+  list-style: none;
+}
+
+
+.icon-hit {
+  background-image: url("../img/hit.svg");
+  display: inline-flex;
+  width: 61px;
+  height: 61px;
+}
+
+.fatness,
+.filler {
+  list-style: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.filter-parameters {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.page-next {
+  text-align: center;
+  margin-left: 10px;
+}
+
+.icon-left {
+  background-image: url("../img/Shape.svg");
+  background-position: center;
+  display: inline-flex;
+  background-repeat: no-repeat;
+  width: 7px;
+  height: 12px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.title-subsection-page {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 41px;
+}
 

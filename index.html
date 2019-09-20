@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="page-home">
 <header class="page-header">
   <nav class="main-menu">
     <div class="header-container">
@@ -83,94 +83,102 @@
     <ul class="showcase-slides">
       <li class="showcase-slide">
         <h3 class="showcase-slide">Крем-брюле и пломбир с малиновым джемом</h3>
-        <a href="" aria-label="Купить крем-брюле и пломбир с малиновым джемом">Давайте оба!</a>
+        <a href="" class="btn btn-large" aria-label="Купить крем-брюле и пломбир с малиновым джемом">Давайте оба!</a>
       </li>
-      <li class="showcase-slide">
+      <li class=" visually-hidden showcase-slide">
         <h3 class="showcase-slide">Шоколадный пломбир и лимонный сорбет</h3>
-        <a href="" aria-label="Купить шоколадный пломбир и лимонный сорбет">Давайте оба!</a>
+        <a href="" class="btn btn-large" aria-label="Купить шоколадный пломбир и лимонный сорбет">Давайте оба!</a>
       </li>
-      <li class="showcase-slide">
+      <li class=" visually-hidden showcase-slide">
         <h3 class="showcase-slide">Пломбир с помадкой и клубничный щербет</h3>
-        <a href="" aria-label="Купить пломбир с помадкой и клубничный щербет">Давайте оба!</a>
+        <a href="" class="btn btn-large"aria-label="Купить пломбир с помадкой и клубничный щербет">Давайте оба!</a>
       </li>
     </ul>
     <div>
-      <button type="button" aria-label="Вы находитесь на первом слайде специальных предложений">1</button>
-      <button type="button" aria-label="Перейти на второй слайд со специальными предложениями">2</button>
-      <button type="button" aria-label="Перейти на третий слайд со специальными предложениями">3</button>
+      <button type="button" class="btn-active" aria-label="Вы находитесь на первом слайде специальных предложений"></button>
+      <button type="button" class="btn-small" aria-label="Перейти на второй слайд со специальными предложениями"></button>
+      <button type="button" class="btn-small" aria-label="Перейти на третий слайд со специальными предложениями"></button>
     </div>
   </section>
 
   <section>
     <h2 class="visually-hidden">Действующие акции</h2>
 
+    <div class="raspberry-background">
     <section>
-      <h3>Малинка даром!</h3>
-      <p>
+      <h3 class="stock-title">Малинка даром!</h3>
+      <p class="gift">
         При покупке 2 кг любого фруктового мороженого, добавим
         в ваш заказ банку малинового варенья бесплатно.
       </p>
-      <a href="" aria-label="Получить банку малинового варенья в подарок">Хочу варенье!</a>
+      <div class="get-discount">
+      <a href="" aria-label="Получить банку малинового варенья в подарок" class="btn">Хочу варенье!</a>
+      </div>
     </section>
+    </div>
 
+    <div class="chocolate-background">
     <section>
-      <h3>Шоколадки даром!</h3>
-      <p>
+      <h3 class="stock-title">Шоколадки даром!</h3>
+      <p class="gift">
         При покупке 2 кг пломбира, добавим в ваш заказ упаковку
         вкуснейшей шоколадной присыпки совершенно бесплатно.
       </p>
-      <a href="" aria-label="Получить упаковку шоколадной присыпки в подарок">Хочу шоколадки!</a>
+      <div class="get-discount">
+      <a href="" aria-label="Получить упаковку шоколадной присыпки в подарок" class="btn">Хочу шоколадки!</a>
+      </div>
     </section>
   </section>
+  </div>
 
   <section>
     <h2 class="visually-hidden">Хиты продаж</h2>
-    <ul>
-      <li>
-        <span>Хит!</span>
+    <ul class="assortment-list">
+      <li class="hit-list">
+        <span class="icon-hit"></span>
         <div>
           <img src="img/ice_cream_1.png" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой" width="267"
                height="267">
-          <p>310₽<span>/кг</span></p>
+          <p class="price">310₽<span>/кг</span></p>
         </div>
-        <a href="">
-          <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+        <a href="" class="assortment-link link">
+          <p class="assortment-item">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
         </a>
-        <button type="button">Быстрый просмотр</button>
+        <button type="button" class="visually-hidden">Быстрый просмотр</button>
       </li>
-      <li>
-        <span>Хит!</span>
+      <li class="hit-list">
+        <span class="icon-hit"></span>
         <div>
           <img src="img/ice_cream_2.png" alt="Сливочно-кофейное мороженое с кусочками шоколада" width="267" height="267">
-          <p>380₽<span>/кг</span></p>
+          <p class="price">380₽<span class="weight">/кг</span></p>
         </div>
-        <a href="">
-          <p>Сливочно-кофейное с кусочками шоколада</p>
+        <a href="" class="assortment-link link">
+          <p class="assortment-item">Сливочно-кофейное с кусочками шоколада</p>
         </a>
-        <button type="button">Быстрый просмотр</button>
+        <button type="button" class="visually-hidden">Быстрый просмотр</button>
       </li>
-      <li>
-        <span>Хит!</span>
+      <li class="hit-list">
+        <span class="icon-hit"></span>
         <div>
           <img src="img/ice_cream_3.png" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада" width="267"
                height="267">
-          <p>355₽<span>/кг</span></p>
+          <p class="price">355₽<span class="weight">/кг</span></p>
         </div>
-        <a href="">
-          <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+        <a href="" class="assortment-link link">
+          <p class="assortment-item">Сливочно-клубничное с присыпкой из белого шоколада</p>
         </a>
-        <button type="button">Быстрый просмотр</button>
+        <button type="button" class="visually-hidden">Быстрый просмотр</button>
       </li>
-      <li>
-        <span>Хит!</span>
+      <li class="hit-list">
+        <span class="icon-hit"></span>
         <div>
           <img src="img/ice_cream_4.png" alt="Сливочное крем-брюле мороженое с карамельной подливкой" width="267" height="267">
-          <p>415₽<span>/кг</span></p>
+          <p class="price">415₽<span class="weight">/кг</span></p>
         </div>
-        <a href="">
-          <p>Сливочное крем-брюле с карамельной подливкой</p>
+        <a href="" class="assortment-link link">
+          <p class="assortment-item">Сливочное крем-брюле с карамельной подливкой</p>
         </a>
-        <button type="button">Быстрый просмотр</button>
+        <button type="button" class="visually-hidden">Быстрый просмотр</button>
       </li>
     </ul>
   </section>
@@ -203,7 +211,7 @@
 
   <article class="news">
     <p class="news-rubric">Новое в нашем блоге</p>
-    <h2 class="news-title">10 способов сервировки фруктовых щербетов к столу</h2>
+    <h2 class="news-title"><a href="" class="link blog-link">10 способов сервировки фруктовых щербетов к столу</a></h2>
   </article>
 
   <div class="subscribition-container">
@@ -221,20 +229,21 @@
 
   <section>
     <h2 class="visually-hidden">Схема проезда</h2>
+    <span class="pin"></span>
     <img src="./img/map.png" alt="Адрес главного офиса и офлайн магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1200" height="430">
     <section>
-      <p>
+      <p class="store-address">
         Адрес главного офиса<br>
         и офлайн магазина:<br>
-        <b>ул. Большая Конюшенная<br>
+        <b class="bold-text">ул. Большая Конюшенная<br>
           19/8, Санкт-Петербург</b>
       </p>
-      <p>
+      <p class="working-hours">
         Для заказов по телефону:<br>
-        <b>8 812 450-25-25</b><br>
+        <b сlass="bold-text">8 812 450-25-25</b><br>
         (с 10 до 20 ежедневно)
       </p>
-      <a href="">Форма обратной связи</a>
+      <a href="" class="btn">Форма обратной связи</a>
     </section>
   </section>
 

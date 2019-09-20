@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <title>HTML Academy: Глейси</title>
 </head>
-<body>
+<body class="page-catalog">
 <header class="page-header">
 
   <nav class="main-menu">
@@ -138,15 +138,21 @@
   <h1 class="visually-hidden">Gllacy Shop</h1>
 
   <section class="catalog-menu">
-    <h2>Сливочное мороженое</h2>
+    <h2 class="title-subsection-page">Сливочное мороженое</h2>
     <ul class="breadcrumbs">
       <li>
-        <a href="index.html" class="previous-link link">Главная</a>
+        <a href="index.html" class="previous-link link">Главная
+          <span class="icon-right"></span>
+          <span class="icon-right"></span>
+        </a>
       </li>
       <li>
-        <a href="" class="previous-link link">Каталог</a>
+        <a href="" class="previous-link link">Каталог
+          <span class="icon-right"></span>
+          <span class="icon-right"></span>
+        </a>
       </li>
-      <li>Сливочное</li>
+      <li class="current-section">Сливочное</li>
     </ul>
   </section>
 
@@ -155,7 +161,7 @@
     <form action="https://echo.htmlacademy.ru" method="post">
 
       <div>
-        <label for="select-sort">Сортировка:</label>
+        <label class="filter-parameters" for="select-sort">Сортировка:</label>
         <select id="select-sort" name="sort">
           <option value="popular" selected>по популярности</option>
           <option value="сheap">сначала недорогие</option>
@@ -165,26 +171,26 @@
       </div>
 
       <div>
-        <label for="price-range">Цена: 100 руб. - 500 руб.</label>
+        <label class="filter-parameters" for="price-range">Цена: 100 руб. - 500 руб.</label>
         <input type="text" id="price-range" name="price-range" value="100-500">
       </div>
 
       <div>
-        <label>Жирность:</label>
+        <label class="filter-parameters">Жирность:</label>
         <ul>
-          <li>
+          <li class="fatness">
             <input type="radio" name="fatness" id="fat-0">
             <label for="fat-0">0%</label>
           </li>
-          <li>
+          <li class="fatness">
             <input type="radio" name="fatness" id="fat-10" checked>
             <label for="fat-10">до 10%</label>
           </li>
-          <li>
+          <li class="fatness">
             <input type="radio" name="fatness" id="fat-30">
             <label for="fat-30">до 30%</label>
           </li>
-          <li>
+          <li class="fatness">
             <input type="radio" name="fatness" id="fat-30plus">
             <label for="fat-30plus">выше 30%</label>
           </li>
@@ -192,31 +198,31 @@
       </div>
 
       <div>
-        <label>Наполнители:</label>
+        <label class="filter-parameters">Наполнители:</label>
         <ul>
-          <li>
+          <li class="filler">
             <input type="checkbox" id="chocolate" value="шоколадные" name="filler" checked>
             <label for="chocolate">шоколадные</label>
           </li>
-          <li>
+          <li class="filler">
             <input type="checkbox" id="sugar-flours" value="сахарные присыпки" name="filler" checked>
             <label for="sugar-flours">сахарные присыпки</label>
           </li>
-          <li>
+          <li class="filler">
             <input type="checkbox" id="fruit" value="фрукты" name="filler">
             <label for="fruit">фрукты</label>
           </li>
-          <li>
+          <li class="filler">
             <input type="checkbox" id="syrups" value="сиропы" name="filler">
             <label for="syrups">сиропы</label>
           </li>
-          <li>
+          <li class="filler">
             <input type="checkbox" id="jams" value="джемы" name="filler">
             <label for="jams">джемы</label>
           </li>
         </ul>
         <div>
-          <button type="submit" aria-label="Отфильтровать каталог по выбранным критериям">Применить</button>
+          <button type="submit" aria-label="Отфильтровать каталог по выбранным критериям" class="filter-button">Применить</button>
         </div>
       </div>
 
@@ -234,7 +240,7 @@
         <a href="" class="assortment-link link">
           <p class="assortment-item">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
         </a>
-        <button type="button">Быстрый просмотр</button>
+        <button type="button" class="visually-hidden">Быстрый просмотр</button>
       </li>
       <li>
         <div>
@@ -244,7 +250,7 @@
         <a href="" class="assortment-link link">
           <p class="assortment-item">Сливочно-кофейное с кусочками шоколада</p>
         </a>
-        <button type="button">Быстрый просмотр</button>
+        <button type="button" class="visually-hidden">Быстрый просмотр</button>
       </li>
       <li>
         <div>
@@ -255,7 +261,7 @@
         <a href="" class="assortment-link link">
           <p class="assortment-item">Сливочно-клубничное с присыпкой из белого шоколада</p>
         </a>
-        <button type="button">Быстрый просмотр</button>
+        <button type="button" class="visually-hidden">Быстрый просмотр</button>
       </li>
       <li>
         <div>
@@ -265,7 +271,7 @@
         <a href="" class="assortment-link link">
           <p class="assortment-item">Сливочное крем-брюле с карамельной подливкой</p>
         </a>
-        <button type="button">Быстрый просмотр</button>
+        <button type="button" class="visually-hidden">Быстрый просмотр</button>
       </li>
       <li>
         <div>
@@ -275,7 +281,7 @@
         <a href="" class="assortment-link link">
           <p class="assortment-item">Сливочное с брусничным джемом</p>
         </a>
-        <button type="button">Быстрый просмотр</button>
+        <button type="button" class="visually-hidden">Быстрый просмотр</button>
       </li>
       <li>
         <div>
@@ -285,7 +291,7 @@
         <a href="" class="assortment-link link">
           <p class="assortment-item">Сливочно-черничное с цельными ягодами черники</p>
         </a>
-        <button type="button">Быстрый просмотр</button>
+        <button type="button" class="visually-hidden">Быстрый просмотр</button>
       </li>
       <li>
         <div>
@@ -295,7 +301,7 @@
         <a href="" class="assortment-link link">
           <p class="assortment-item">Сливочно-лимонное с карамельной присыпкой</p>
         </a>
-        <button type="button">Быстрый просмотр</button>
+        <button type="button" class="visually-hidden">Быстрый просмотр</button>
       </li>
       <li>
         <div>
@@ -305,7 +311,7 @@
         <a href="" class="assortment-link link">
           <p class="assortment-item">Сливочное с шоколадной стружкой</p>
         </a>
-        <button type="button">Быстрый просмотр</button>
+        <button type="button" class="visually-hidden">Быстрый просмотр</button>
       </li>
       <li>
         <div>
@@ -315,7 +321,7 @@
         <a href="" class="assortment-link link">
           <p class="assortment-item">Сливочно-ванильное с кусочками шоколада</p>
         </a>
-        <button type="button">Быстрый просмотр</button>
+        <button type="button" class="visually-hidden">Быстрый просмотр</button>
       </li>
       <li>
         <div>
@@ -325,7 +331,7 @@
         <a href="" class="assortment-link link">
           <p class="assortment-item">Сливочное с ментоловым сиропом</p>
         </a>
-        <button type="button">Быстрый просмотр</button>
+        <button type="button" class="visually-hidden">Быстрый просмотр</button>
       </li>
       <li>
         <div>
@@ -335,7 +341,7 @@
         <a href="" class="assortment-link link">
           <p class="assortment-item">Сливочное с кусочками черного шоколада</p>
         </a>
-        <button type="button">Быстрый просмотр</button>
+        <button type="button" class="visually-hidden">Быстрый просмотр</button>
       </li>
       <li>
         <div>
@@ -345,19 +351,20 @@
         <a href="" class="assortment-link link">
           <p class="assortment-item">Сливочное с мятным сиропом</p>
         </a>
-        <button type="button">Быстрый просмотр</button>
+        <button type="button" class="visually-hidden">Быстрый просмотр</button>
       </li>
     </ul>
   </section>
 
   <div class="pagination">
     <h2 class="visually-hidden">Порядковая нумерация страниц</h2>
+    <span class="icon-left"></span>
     <span class="page-one">1</span>
-    <a class="page-two" href="#" aria-label="Перейти на вторую страницу">2</a>
-    <a class="page-three" href="#" aria-label="Перейти на третью страницу">3</a>
-    <a class="page-four" href="#" aria-label="Перейти на четвертую страницу">4</a>
-    <a class="page-five" href="#" aria-label="Перейти на пятую страницу">5</a>
-    <a class="page-next" href="#" aria-label="Перейти на следующую страницу">Далее</a>
+    <a class="link-page page-two" href="#" aria-label="Перейти на вторую страницу"><span class="number-page">2</span></a>
+    <a class="link-page page-three" href="#" aria-label="Перейти на третью страницу"><span class="number-page">3</span></a>
+    <a class="link-page page-four" href="#" aria-label="Перейти на четвертую страницу"><span class="number-page">4</span></a>
+    <a class="link-page page-five" href="#" aria-label="Перейти на пятую страницу"><span class="number-page">5</span></a>
+    <a class="page-next" href="#" aria-label="Перейти на следующую страницу"><span class="icon-right"></span></a>
   </div>
 
 </main>
