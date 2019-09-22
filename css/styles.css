@@ -374,8 +374,25 @@ a {
   line-height: 16px;
 }
 
+.breadcrumbs-item {
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.breadcrumbs-item::after {
+  content: '»';
+  display: inline-flex;
+  padding: 0 5px;
+}
+
+.breadcrumbs-item:last-child::after {
+  display: none;
+}
+
 .breadcrumbs {
   list-style: none;
+  display: flex;
+  align-items: baseline;
 }
 
 .item-link-selected {
@@ -471,30 +488,14 @@ a {
   line-height: 30px;
 }
 
-.page-one {
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 8px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  color: #353535;
-  border-radius: 50%;
-  background-color: #fff;
-  width: 26px;
-  height: 26px;
-}
-
 .link-page {
   display: inline-flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   color: #ffffff;
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  padding: 8px;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -502,6 +503,15 @@ a {
 
 .link-page:hover {
   background: rgba(255, 255, 255, 0.2);
+}
+
+.link-page-active {
+  color: #353535;
+  background-color: #fff;
+}
+
+.link-page-active:hover {
+  background-color: #fff;
 }
 
 .link-page:active {
@@ -564,7 +574,7 @@ a {
   background-size: contain;
 }
 
-.icon-right {
+.page-next {
   background-image: url("../img/icon-right-small.svg");
   background-position: center;
   display: inline-flex;
@@ -604,7 +614,7 @@ a {
   margin-left: 10px;
 }
 
-.icon-left {
+.page-previous {
   background-image: url("../img/Shape.svg");
   background-position: center;
   display: inline-flex;
