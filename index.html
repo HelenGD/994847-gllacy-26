@@ -61,7 +61,7 @@
             <form action="https://echo.htmlacademy.ru" method="post" class="search-field">
               <label class="visually-hidden" for="input-search">поиск</label>
               <input class="input input-search" type="text" id="input-search" name="input-search"
-                     placeholder="Крем-брюле">
+                     placeholder="Крем-брюле" required>
             </form>
           </section>
         </li>
@@ -76,9 +76,9 @@
             <form action="https://echo.htmlacademy.ru" method="post">
               <label class="visually-hidden" for="sign-in-email">электронная почта</label>
               <input type="email" id="sign-in-email" name="email" placeholder="email@example.com"
-                     class="input input-enter">
+                     class="input input-enter" required>
               <label class="visually-hidden" for="password">пароль</label>
-              <input type="password" id="password" name="password" placeholder="********" class="input input-enter">
+              <input type="password" id="password" name="password" placeholder="********" class="input input-enter" required>
               <div class="site-enter-submit">
                 <button type="submit" aria-label="Войти на сайт" class="btn registration-button">Войти</button>
                 <ul class="registration-list">
@@ -174,6 +174,8 @@
               <a href="" class="assortment-link link">
                 <p class="assortment-item">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
               </a>
+            </div>
+            <div class="ice-cream-action">
               <button type="button" class="btn ice-cream-btn">Быстрый просмотр</button>
             </div>
           </li>
@@ -186,6 +188,8 @@
               <a href="" class="assortment-link link">
                 <p class="assortment-item">Сливочно-кофейное с кусочками шоколада</p>
               </a>
+            </div>
+            <div class="ice-cream-action">
               <button type="button" class="btn ice-cream-btn">Быстрый просмотр</button>
             </div>
           </li>
@@ -198,6 +202,8 @@
               <a href="" class="assortment-link link">
                 <p class="assortment-item">Сливочно-клубничное с присыпкой из белого шоколада</p>
               </a>
+            </div>
+            <div class="ice-cream-action">
               <button type="button" class="btn ice-cream-btn">Быстрый просмотр</button>
             </div>
           </li>
@@ -210,6 +216,8 @@
               <a href="" class="assortment-link link">
                 <p class="assortment-item">Сливочное крем-брюле с карамельной подливкой</p>
               </a>
+            </div>
+            <div class="ice-cream-action">
               <button type="button" class="btn ice-cream-btn">Быстрый просмотр</button>
             </div>
           </li>
@@ -263,7 +271,7 @@
               не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <form action="https://echo.htmlacademy.ru" method="post" class="form-subscribition">
               <label class="visually-hidden" for="input-subscription">подписка на рассылку по почте</label>
-              <input class="input" type="email" id="input-subscription" name="email" placeholder="email@example.com">
+              <input class="input" type="email" id="input-subscription" name="email" placeholder="email@example.com" required>
               <button class="btn" type="submit">Отправить</button>
             </form>
           </section>

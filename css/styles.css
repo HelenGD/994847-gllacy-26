@@ -4,6 +4,7 @@
 }
 
 body {
+  min-width: 1200px;
   padding: 0;
   font-family: Roboto, Arial,sans-serif;
   font-size: 16px;
@@ -26,6 +27,7 @@ body {
 .slider-input:nth-child(1):checked ~ .page-home {
   background-image: url(../img/slide-1.png);
   background-color: #849d8f;
+
 }
 
 .slider-input:nth-child(2):checked ~ .page-home {
@@ -286,6 +288,7 @@ img {
   padding: 23px 20px;
   margin-bottom: 40px;
   border-radius: 15px;
+  background-color: #f5f5dc;
 }
 
 .advantages-title {
@@ -636,7 +639,6 @@ img {
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
-  padding: 0;
 }
 
 .catalog-list {
@@ -651,6 +653,10 @@ img {
   -ms-flex-align: start;
   align-items: flex-start;
 }
+
+/*.ice-cream-name:nth-child(4) ~ .ice-cream-name {*/
+/*  margin-top: -50px;*/
+/*}*/
 
 .assortment-link {
   font-weight: 500;
@@ -906,6 +912,25 @@ img {
   display: flex;
   width: 25%;
   text-align: center;
+  position: relative;
+  margin-bottom: 27px;
+}
+
+.ice-cream-action {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  bottom: -80px;
+  box-shadow: 0 20px 20px 0 rgba(0,0,0,.2);
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: 1;
+  opacity: 0;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 21px;
+  border-radius: 5px;
 }
 
 .page-footer,
@@ -987,6 +1012,8 @@ img {
   padding-top: 26px;
   color: #323232;
   background-image: url("../img/strawberry.png");
+  background-color: #fff;
+  border-radius: 15px;
 }
 
 .subscribition-container {
@@ -996,6 +1023,7 @@ img {
   background-image: url("../img/bg-post.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #F8F7F4;
 }
 
 .wrap-container {
@@ -1300,19 +1328,9 @@ img {
   position: absolute;
 }
 
-.ice-cream-btn {
-  opacity: 0;
-  margin-top: 20px;
-}
-
-.ice-cream-name:hover {
-  -webkit-box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
-  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
-  background-color: rgba(248, 247, 244, 0.2);
-}
-
-.ice-cream-name:hover .ice-cream-btn {
+.ice-cream-name:hover .ice-cream-action {
   opacity: 1;
+  display: flex;
 }
 
 .showcase {
@@ -1366,10 +1384,12 @@ img {
 
 .raspberry-discount {
   background-image: url("../img/rasberry-background.png");
+  background-color: #DC143C;
 }
 
 .chocolate-discount {
   background-image: url("../img/background-chocolate.png");
+  background-color: #45322e;
 }
 
 .stock-title {
@@ -1725,10 +1745,6 @@ img {
   z-index: 100;
 }
 
-.modal-show {
-  display: block;
-}
-
 .popup-title {
   margin-bottom: 18px;
   font-size: 24px;
@@ -1789,3 +1805,5 @@ img {
   height: 100%;
   z-index: 99;
 }
+
+
