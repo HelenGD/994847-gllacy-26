@@ -6,7 +6,7 @@
 body {
   min-width: 1200px;
   padding: 0;
-  font-family: Roboto, Arial,sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
@@ -107,7 +107,7 @@ img {
   line-height: 18px;
   font-weight: bold;
   color: inherit;
-  border-bottom: 1px solid rgba(255,255,255,.2);
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
 }
 
 .page-header {
@@ -164,7 +164,7 @@ img {
 }
 
 .item-link span {
-  border-bottom: 1px solid rgba(255,255,255,.2);
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
 }
 
 .item-link-selected span {
@@ -256,6 +256,7 @@ img {
   background-color: #f8f7f4;
   color: #323232;
 }
+
 .button-active .basket-icon,
 .button-active:hover .basket-icon {
   background-image: url("../img/basket-red.svg");
@@ -417,7 +418,7 @@ img {
   color: #000;
   background: #FFFFFF;
   border: 1px solid rgba(178, 178, 178, 0.52);
-  font-family: Roboto, Arial,sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   font-weight: bold;
   margin-right: 9px;
   padding-left: 17px;
@@ -472,12 +473,12 @@ img {
 
 .extra-link,
 .developer-link {
-  border-bottom: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .link {
   color: #ffffff;
-  border-bottom: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   padding-bottom: 2px;
 }
 
@@ -781,7 +782,7 @@ img {
 }
 
 .btn-small:hover {
-  background:  rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .filter-button {
@@ -923,7 +924,7 @@ img {
   left: 0;
   width: 100%;
   bottom: -80px;
-  box-shadow: 0 20px 20px 0 rgba(0,0,0,.2);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .2);
   background-color: rgba(255, 255, 255, 0.2);
   z-index: 1;
   opacity: 0;
@@ -1645,6 +1646,7 @@ img {
   height: 20px;
   opacity: 0;
 }
+
 .filters-radio-label,
 .filters-checkbox-label {
   position: relative;
@@ -1806,4 +1808,27 @@ img {
   z-index: 99;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translate(-50%, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
 
+.modal-show {
+  display: block;
+  animation-name: bounce;
+  animation-duration: 0.6s;
+}
+
+.overlay {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
