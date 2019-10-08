@@ -1,3 +1,19 @@
+function getItem(key) {
+  try {
+    return localStorage.getItem(key)
+  } catch (e) {
+    console.error(e);
+  }
+}
+
+function setItem(key, value) {
+  try {
+    localStorage.setItem(key, value)
+  } catch (e) {
+    console.error(e);
+  }
+}
+
 var button = document.querySelector(".btn-feedback");
 var popup = document.querySelector(".modal");
 var close = popup.querySelector(".popup-close");
@@ -7,8 +23,8 @@ var message = popup.querySelector("#feedback-message");
 var userName = popup.querySelector("#user-name");
 var email = popup.querySelector("#user-email");
 
-var storageName = localStorage.getItem("name");
-var storageEmail = localStorage.getItem("email");
+var storageName = getItem("name");
+var storageEmail = getItem("email");
 
 var handleClose = function (e) {
 
@@ -23,6 +39,16 @@ var handleClose = function (e) {
 };
 
 button.addEventListener("click", function (e) {
+  if (storageName && !storageEmail) {
+    userName.value = storageName;
+    email.focus();
+  } else if (storageName && storageEmail) {
+    userName.value = storageName;
+    email.value = storageEmail;
+    message.focus()
+  } else {
+    userName.focus();
+  }
   e.preventDefault();
   e.stopPropagation();
   popup.classList.add("modal-show");
@@ -40,21 +66,11 @@ close.addEventListener("click", function (e) {
   window.removeEventListener("click", handleClose);
 });
 
-if (storageName && !storageEmail) {
-  userName.value = storageName;
-  email.focus();
-} else if (storageName && storageEmail) {
-  userName.value = storageName;
-  email.value = storageEmail;
-  message.focus()
-} else {
-  userName.focus();
-}
 
 form.addEventListener("submit", function (e) {
   if (userName.value && email.value && message.value) {
-    localStorage.setItem('name', userName.value);
-    localStorage.setItem('email', email.value);
+    setItem('name', userName.value);
+    setItem('email', email.value);
 
     close.click();
   }
