@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns="http://www.w3.org/1999/html">
-
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="utf-8">
   <meta name="format-detection" content="telephone=no">
@@ -9,13 +8,11 @@
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
 <input class="slider-input" type="radio" id="slide-1" name="slider" checked>
 <input class="slider-input" type="radio" id="slide-2" name="slider">
 <input class="slider-input" type="radio" id="slide-3" name="slider">
-
-<section class="page-home">
+<div class="page-home">
   <div class="main-container">
     <header class="page-header">
       <nav class="main-menu">
@@ -70,7 +67,6 @@
             <span class="icon enter-icon"></span>
             Вход
           </button>
-
           <section class="enter-site user-nav-popup">
             <h2 class="visually-hidden">Как войти на сайт</h2>
             <form action="https://echo.htmlacademy.ru" method="post">
@@ -90,7 +86,6 @@
             </form>
           </section>
         </li>
-
         <li class="user-nav-basket">
           <button type="button" class="button basket-button" aria-label="Перейти в корзину">
             <span class="icon basket-icon"></span>
@@ -98,19 +93,16 @@
           </button>
         </li>
       </ul>
-
       <section class="contacts">
         <h2 class="visually-hidden">Контактная информация</h2>
         <p class="office-hours">С 10 до 20, ежедневно</p>
         <a href="tel:+78124502525" class="phone link" aria-label="Номер телефона Gllacy Shop">8 812 450-25-25</a>
       </section>
-
     </header>
   </div>
   <main class="page-main">
     <div class="main-container">
       <h1 class="visually-hidden">Gllacy Shop</h1>
-
       <section class="showcase">
         <h2 class="visually-hidden">Специальные предложения</h2>
         <ul class="showcase-slides">
@@ -128,7 +120,6 @@
             <a href="" class="btn btn-large" aria-label="Купить пломбир с помадкой и клубничный щербет">Давайте оба!</a>
           </li>
         </ul>
-
         <div class="showcase-controls">
           <label for="slide-1" class="btn-small"
                  aria-label="Вы находитесь на первом слайде специальных предложений"></label>
@@ -138,10 +129,8 @@
                  aria-label="Перейти на третий слайд со специальными предложениями"></label>
         </div>
       </section>
-
       <div class="container-discount">
         <h2 class="visually-hidden">Действующие акции</h2>
-
         <section class="special-discount raspberry-discount">
           <h3 class="stock-title">Малинка даром!</h3>
           <p class="gift">
@@ -152,7 +141,6 @@
             <a href="" aria-label="Получить банку малинового варенья в подарок" class="btn">Хочу варенье!</a>
           </div>
         </section>
-
         <section class="special-discount chocolate-discount">
           <h3 class="stock-title">Шоколадки даром!</h3>
           <p class="gift">
@@ -164,8 +152,6 @@
           </div>
         </section>
       </div>
-
-
       <section>
         <h2 class="visually-hidden">Хиты продаж</h2>
         <ul class="catalog-list">
@@ -227,7 +213,6 @@
           </li>
         </ul>
       </section>
-
       <section class="advantages">
         <h2 class="advantages-title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного
           производства на развес</h2>
@@ -247,25 +232,23 @@
             <span class="advantages-icon advantages-icon-eco"></span>
             <p class="advantage-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего
               качества. Все
-              дополнительные ингридиенты и добавки произведены из натурального экологически чистого сырья.</p>
+              дополнительные ингридиенты и добавки произведены из натурального, экологически чистого сырья.</p>
           </li>
           <li class="advantage">
             <span class="advantages-icon advantages-icon-thermometer"></span>
-            <p class="advantage-item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
+            <p class="advantage-item">Доставка нашего мороженого до заказчиков осуществляется в&nbsp;специальном термопаке,
               который не дает
               мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
           </li>
         </ul>
       </section>
-
       <div class="wrap-container">
         <article class="news">
           <p class="news-rubric">Новое в нашем блоге</p>
-          <h2 class="news-title"><a href="" class="link blog-link">10 способов сервировки<br> фруктовых щербетов<br> к
+          <h2 class="news-title"><a href="" class="link blog-link">10 способов сервировки<br> фруктовых щербетов к<br>
             столу</a>
           </h2>
         </article>
-
         <div class="subscribition-container">
           <section class="subscribition">
             <h2 class="visually-hidden">Подписка на рассылку</h2>
@@ -286,29 +269,28 @@
     <section class="driving-direction">
       <h2 class="visually-hidden">Схема проезда</h2>
       <span class="visually-hidden pin"></span>
-      <iframe
-        src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad8c006552ca7d3adc16aec11d81a5e3ba98a5f88c12c2a4ab9ecacfba7f05b35&amp;source=constructor"
-        width="100%" height="430" frameborder="0"></iframe>
+      <iframe class="interactive-map"
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad8c006552ca7d3adc16aec11d81a5e3ba98a5f88c12c2a4ab9ecacfba7f05b35&amp;source=constructor" allowfullscreen></iframe>
       <div class="main-container main-container-absolute">
         <section class="map-contacts">
+          <h2 class="visually-hidden">Форма обратной связи</h2>
           <p class="store-address">
             Адрес главного офиса<br>
             и офлайн магазина:<br>
-            <b class="bold-text">ул. Большая Конюшенная<br>
-              19/8, Санкт-Петербург</b>
+            <strong class="bold-text">ул. Большая Конюшенная<br>
+              19/8, Санкт-Петербург</strong>
           </p>
           <p class="working-hours">
             Для заказов по телефону:<br>
-            <b сlass="bold-text">8 812 450-25-25</b><br>
+            <a href="tel:+78124502525" class="link phone bold-text-phone">8 812 450-25-25</a><br>
             (с 10 до 20 ежедневно)
           </p>
           <div class="feedback">
-            <a href="" class="btn btn-feedback">Форма обратной связи</a>
+            <a href="form.html" class="btn btn-feedback">Форма обратной связи</a>
           </div>
         </section>
       </div>
     </section>
-
     <section class="modal">
       <h2 class="visually-hidden">Обратная связь</h2>
       <form action="https://echo.htmlacademy.ru" method="post" class="form-feedback">
@@ -327,7 +309,6 @@
       </form>
       <button class="popup-close" type="button" name="button" title="Закрыть">Закрыть</button>
     </section>
-
   </main>
   <div class="main-container">
     <footer class="page-footer-index">
@@ -349,10 +330,8 @@
           </a></li>
         </ul>
       </section>
-
       <section class="additional-information">
         <h2 class="visually-hidden">Дополнительная информация</h2>
-
         <ul class="extra-nav">
           <li class="extra-nav-item"><a href="" class="extra-link link suppliers-link">Для поставщиков</a></li>
           <li class="extra-nav-item"><a href="" class="extra-link link">Наши документы</a></li>
@@ -360,9 +339,9 @@
           <li class="extra-nav-item"><a href="" class="extra-link link">Экологические стандарты</a></li>
         </ul>
       </section>
-
       <div class="developer-container">
         <section>
+          <h2 class="visually-hidden">Создатель верстки</h2>
           <span class="logo-academy"></span>
           <p class="developer-copyright">Сделано в <a class="developer-link link"
                                                       href="https://up.htmlacademy.ru/htmlcss/26/project/gllacy#gllacy-3-7"
@@ -372,7 +351,7 @@
       </div>
     </footer>
   </div>
-</section>
+</div>
 <script src="./js/popup.js"></script>
 </body>
 </html>

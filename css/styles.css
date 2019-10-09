@@ -27,7 +27,6 @@ body {
 .slider-input:nth-child(1):checked ~ .page-home {
   background-image: url(../img/slide-1.png);
   background-color: #849d8f;
-
 }
 
 .slider-input:nth-child(2):checked ~ .page-home {
@@ -72,10 +71,7 @@ body {
   left: 50%;
   margin-left: -600px;
   height: 100%;
-}
-
-p {
-  margin: 0;
+  pointer-events: none;
 }
 
 a {
@@ -340,6 +336,7 @@ img {
 }
 
 .news-rubric {
+  margin: 0;
   font-weight: 500;
 }
 
@@ -480,6 +477,7 @@ img {
   color: #ffffff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   padding-bottom: 2px;
+  margin-bottom: 4px;
 }
 
 .link:hover,
@@ -489,6 +487,7 @@ img {
 }
 
 .assortment-item {
+  margin: 0;
   display: inline;
   font-weight: 500;
   font-size: 16px;
@@ -499,6 +498,10 @@ img {
 .extra-nav,
 .developer-copyright {
   list-style: none;
+}
+
+.developer-copyright {
+  margin: 0;
 }
 
 .social-link,
@@ -588,10 +591,12 @@ img {
 }
 
 .contacts {
+  z-index: 1;
   font-weight: bold;
 }
 
 .office-hours {
+  margin: 0;
   font-size: 14px;
   line-height: 16px;
 }
@@ -655,10 +660,6 @@ img {
   align-items: flex-start;
 }
 
-/*.ice-cream-name:nth-child(4) ~ .ice-cream-name {*/
-/*  margin-top: -50px;*/
-/*}*/
-
 .assortment-link {
   font-weight: 500;
   color: #ffffff;
@@ -670,7 +671,8 @@ img {
   font-size: 45px;
   line-height: 45px;
   text-align: left;
-  margin-top: -70px;
+  margin: 0;
+  margin-top: -65px;
   margin-bottom: 20px;
 }
 
@@ -702,10 +704,12 @@ img {
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
+  margin: 0;
 }
 
 .store-address,
 .working-hours {
+  margin: 0;
   font-size: 14px;
   line-height: 20px;
 }
@@ -722,6 +726,7 @@ img {
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
+  padding: 0;
 }
 
 .link-page {
@@ -1003,6 +1008,7 @@ img {
 }
 
 .advantage-item {
+  margin: 0;
   margin-top: 10px;
   margin-left: 10px;
 }
@@ -1038,6 +1044,7 @@ img {
 }
 
 .subscription-post {
+  margin: 0;
   padding-bottom: 40px;
 }
 
@@ -1313,6 +1320,7 @@ img {
 }
 
 .full-price {
+  margin: 0;
   text-align: right;
   font-weight: bold;
   font-size: 15px;
@@ -1377,29 +1385,32 @@ img {
 
 .special-discount {
   width: 560px;
-  background-repeat: no-repeat;
-  background-size: cover;
   border-radius: 15px;
-  padding: 20px 20px 20px 25px;
+  padding: 13px 20px 20px 15px;
 }
 
 .raspberry-discount {
-  background-image: url("../img/rasberry-background.png");
+  background-image: url("../img/bg-raspberries.jpg");
   background-color: #DC143C;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .chocolate-discount {
-  background-image: url("../img/background-chocolate.png");
+  background-image: url("../img/bg-chocolate.jpg");
   background-color: #45322e;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .stock-title {
   margin: 0;
-  margin-bottom: 25px;
+  padding: 0;
 }
 
 .gift {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  margin-top: 10px;
 }
 
 .map-contacts {
@@ -1417,10 +1428,12 @@ img {
   transform: translateY(-50%);
   right: 25px;
   z-index: 1;
+  pointer-events: auto;
 }
 
 .store-address,
 .working-hours {
+  margin: 0;
   font-size: 14px;
   line-height: 20px;
   color: #323232;
@@ -1471,7 +1484,7 @@ img {
 
 .filters-select {
   display: block;
-  padding: 9px 33px 9px 15px;
+  padding: 9px 33px 9px 18px;
   border: 0;
   border-radius: 18px;
   font-family: inherit;
@@ -1604,8 +1617,8 @@ img {
 }
 
 .filters-checkbox-inputs {
-  padding-left: 16px;
-  padding-right: 10px;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 .filters-checkbox-item,
@@ -1831,4 +1844,43 @@ img {
   bottom: 0;
   left: 0;
   position: absolute;
+}
+
+.interactive-map {
+  border: 0;
+  height: 430px;
+  width: 100%;
+}
+
+.bold-text-phone {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #323232;
+}
+
+.product-name,
+.product-weight,
+.common-price {
+  margin: 0;
+}
+
+@keyframes shake {
+
+  0%, 100% {
+    transform: translateX(0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
 }
