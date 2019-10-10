@@ -49,7 +49,7 @@
         </div>
       </nav>
       <ul class="user-nav">
-        <li class="user-nav-search">
+        <li class="user-nav-item">
           <button type="button" class="button button-search">
             <span class="visually-hidden">поиск по сайту</span>
           </button>
@@ -62,7 +62,7 @@
             </form>
           </section>
         </li>
-        <li class="user-nav-enter">
+        <li class="user-nav-item">
           <button type="button" class="button enter-button" aria-label="Войти на сайт">
             <span class="icon enter-icon"></span>
             Вход
@@ -79,14 +79,14 @@
               <div class="site-enter-submit">
                 <button type="submit" aria-label="Войти на сайт" class="btn registration-button">Войти</button>
                 <ul class="registration-list">
-                  <li class="registration-item"><a href="" class="registration-link">Забыли пароль?</a></li>
-                  <li class="registration-item"><a href="" class="registration-link">Новая регистрация</a></li>
+                  <li class="registration-item"><a href="" class="link registration-link">Забыли пароль?</a></li>
+                  <li class="registration-item"><a href="" class="link registration-link">Новая регистрация</a></li>
                 </ul>
               </div>
             </form>
           </section>
         </li>
-        <li class="user-nav-basket">
+        <li class="user-nav-item">
           <button type="button" class="button basket-button" aria-label="Перейти в корзину">
             <span class="icon basket-icon"></span>
             Пусто
@@ -152,15 +152,15 @@
           </div>
         </section>
       </div>
-      <section>
+      <section class="catalog-hit">
         <h2 class="visually-hidden">Хиты продаж</h2>
-        <ul class="catalog-list">
+        <ul class="catalog-list catalog-add">
           <li class="ice-cream-name hit-list">
             <div class="ice-cream-card">
               <span class="icon-hit"></span>
               <img src="img/ice_cream_1.png" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой"
                    width="267" height="267">
-              <p class="price">310₽<span>/кг</span></p>
+              <p class="price">310₽<span class="weight">/кг</span></p>
               <a href="" class="assortment-link link">
                 <p class="assortment-item">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
               </a>
@@ -190,7 +190,7 @@
                    width="267" height="267">
               <p class="price">355₽<span class="weight">/кг</span></p>
               <a href="" class="assortment-link link">
-                <p class="assortment-item">Сливочно-клубничное с присыпкой из белого шоколада</p>
+                <p class="assortment-item">Сливочно-клубничное с<br>присыпкой из белого шоколада</p>
               </a>
             </div>
             <div class="ice-cream-action">
@@ -236,7 +236,8 @@
           </li>
           <li class="advantage">
             <span class="advantages-icon advantages-icon-thermometer"></span>
-            <p class="advantage-item">Доставка нашего мороженого до заказчиков осуществляется в&nbsp;специальном термопаке,
+            <p class="advantage-item">Доставка нашего мороженого до заказчиков осуществляется в&nbsp;специальном
+              термопаке,
               который не дает
               мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
           </li>
@@ -256,9 +257,10 @@
               вкусного,
               что у нас происходит. Обещаем
               не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-            <form action="https://echo.htmlacademy.ru" method="post" class="form-subscribition">
+            <form action="https://echo.htmlacademy.ru" method="post" class="subscribition-form">
               <label class="visually-hidden" for="input-subscription">подписка на рассылку по почте</label>
-              <input class="input" type="email" id="input-subscription" name="email" placeholder="email@example.com"
+              <input class="input subscribition-input" type="email" id="input-subscription" name="email"
+                     placeholder="email@example.com"
                      required>
               <button class="btn" type="submit">Отправить</button>
             </form>
@@ -270,7 +272,8 @@
       <h2 class="visually-hidden">Схема проезда</h2>
       <span class="visually-hidden pin"></span>
       <iframe class="interactive-map"
-        src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad8c006552ca7d3adc16aec11d81a5e3ba98a5f88c12c2a4ab9ecacfba7f05b35&amp;source=constructor" allowfullscreen></iframe>
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad8c006552ca7d3adc16aec11d81a5e3ba98a5f88c12c2a4ab9ecacfba7f05b35&amp;source=constructor"
+              allowfullscreen></iframe>
       <div class="main-container main-container-absolute">
         <section class="map-contacts">
           <h2 class="visually-hidden">Форма обратной связи</h2>
@@ -296,13 +299,12 @@
       <form action="https://echo.htmlacademy.ru" method="post" class="form-feedback">
         <div class="popup-title">Мы обязательно вам ответим!</div>
         <label class="visually-hidden" for="user-name">имя пользователя</label>
-        <input class="input input-name" type="text" id="user-name" name="name" placeholder="Как вас зовут?" required>
+        <input class="input input-name" type="text" id="user-name" name="name" placeholder="Как вас зовут?">
         <label class="visually-hidden" for="user-email">электронная почта пользователя</label>
-        <input class="input input-email" type="email" id="user-email" name="email" placeholder="Ваша почта для ответа?"
-               required>
+        <input class="input input-email" type="email" id="user-email" name="email" placeholder="Ваша почта для ответа?">
         <label class="visually-hidden">Комментарий от пользователя</label>
-        <textarea class="textarea-comment" placeholder="Напишите что-нибудь..." id="feedback-message" name="message"
-                  required></textarea>
+        <textarea class="textarea-comment" placeholder="Напишите что-нибудь..." id="feedback-message"
+                  name="message"></textarea>
         <div class="button-submit">
           <button class="btn btn-submit" type="submit">Отправить</button>
         </div>
@@ -312,7 +314,6 @@
   </main>
   <div class="main-container">
     <footer class="page-footer-index">
-
       <section>
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <ul class="social-links">

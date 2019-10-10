@@ -14,31 +14,31 @@ function setItem(key, value) {
   }
 }
 
-var button = document.querySelector(".btn-feedback");
-var popup = document.querySelector(".modal");
-var close = popup.querySelector(".popup-close");
-var form = popup.querySelector(".form-feedback");
+var button = document.querySelector('.btn-feedback');
+var popup = document.querySelector('.modal');
+var close = popup.querySelector('.popup-close');
+var form = popup.querySelector('.form-feedback');
 
-var message = popup.querySelector("#feedback-message");
-var userName = popup.querySelector("#user-name");
-var email = popup.querySelector("#user-email");
+var message = popup.querySelector('#feedback-message');
+var userName = popup.querySelector('#user-name');
+var email = popup.querySelector('#user-email');
 
-var storageName = getItem("name");
-var storageEmail = getItem("email");
+var storageName = getItem('name');
+var storageEmail = getItem('email');
 
 var handleClose = function (e) {
-
   if (e.path.includes(form)) {
     return;
   }
 
-  popup.classList.remove("modal-show");
-  document.body.classList.remove("modal-overlay");
+  popup.classList.remove('modal-show');
+  popup.classList.remove('modal-error');
+  document.body.classList.remove('modal-overlay');
 
-  window.removeEventListener("click", handleClose);
+  window.removeEventListener('click', handleClose);
 };
 
-button.addEventListener("click", function (e) {
+button.addEventListener('click', function (e) {
   if (storageName && !storageEmail) {
     userName.value = storageName;
     email.focus();
@@ -51,37 +51,51 @@ button.addEventListener("click", function (e) {
   }
   e.preventDefault();
   e.stopPropagation();
-  popup.classList.add("modal-show");
+  popup.classList.add('modal-show', 'modal-show-animated');
+  popup.addEventListener('animationend', function () {
+    popup.classList.remove('modal-show-animated');
+  }, {once: true});
   userName.focus();
-  document.body.classList.add("modal-overlay");
+  document.body.classList.add('modal-overlay');
 
-  window.addEventListener("click", handleClose);
+  window.addEventListener('click', handleClose);
 });
 
-close.addEventListener("click", function (e) {
+close.addEventListener('click', function (e) {
   e.preventDefault();
-  popup.classList.remove("modal-show");
-  document.body.classList.remove("modal-overlay");
+  popup.classList.remove('modal-show');
+  popup.classList.remove('modal-error');
+  document.body.classList.remove('modal-overlay');
 
-  window.removeEventListener("click", handleClose);
+
+  window.removeEventListener('click', handleClose);
 });
 
 
-form.addEventListener("submit", function (e) {
-  if (userName.value && email.value && message.value) {
-    setItem('name', userName.value);
-    setItem('email', email.value);
+form.addEventListener('submit', function (e) {
+  if (!userName.value || !email.value || !message.value) {
+    e.preventDefault();
+    popup.addEventListener('animationend', function () {
+      popup.classList.remove('modal-error');
+    }, {once: true});
+    popup.classList.add('modal-error');
+  } else {
+    if (userName.value && email.value && message.value) {
+      setItem('name', userName.value);
+      setItem('email', email.value);
 
-    close.click();
+      close.click();
+    }
   }
 });
 
-window.addEventListener("keydown", function (e) {
+window.addEventListener('keydown', function (e) {
   if (e.keyCode === 27) {
-    if (popup.classList.contains("modal-show")) {
+    if (popup.classList.contains('modal-show')) {
       e.preventDefault();
-      popup.classList.remove("modal-show");
-      document.body.classList.remove("modal-overlay");
+      popup.classList.remove('modal-show');
+      popup.classList.remove('modal-error');
+      document.body.classList.remove('modal-overlay');
     }
   }
 });

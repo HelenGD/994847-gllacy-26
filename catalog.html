@@ -45,7 +45,7 @@
       </div>
     </nav>
     <ul class="user-nav">
-      <li class="user-nav-search">
+      <li class="user-nav-item">
         <button type="button" class="button button-search">
           <span class="visually-hidden">поиск по сайту</span>
         </button>
@@ -53,23 +53,25 @@
           <h2 class="visually-hidden">Поиск по сайту</h2>
           <form action="https://echo.htmlacademy.ru" method="post" class="search-field">
             <label class="visually-hidden input-search" for="input-search">поиск</label>
-            <input class="input input-search" type="text" id="input-search" name="input-search" placeholder="Крем-брюле" required>
+            <input class="input input-search" type="text" id="input-search" name="input-search" placeholder="Крем-брюле"
+                   required>
           </form>
         </section>
       </li>
-      <li class="user-nav-enter">
+      <li class="user-nav-item">
         <button type="button" class="button enter-button" aria-label="Войти на сайт">
           <span class="icon enter-icon"></span>
           Вход
         </button>
-
         <section class="enter-site user-nav-popup">
           <h2 class="visually-hidden">Как войти на сайт</h2>
           <form action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="sign-in-email">электронная почта</label>
-            <input type="email" id="sign-in-email" name="email" placeholder="email@example.com" class="input input-enter" required>
+            <input type="email" id="sign-in-email" name="email" placeholder="email@example.com"
+                   class="input input-enter" required>
             <label class="visually-hidden" for="password">пароль</label>
-            <input type="password" id="password" name="password" placeholder="********" class="input input-enter" required>
+            <input type="password" id="password" name="password" placeholder="********" class="input input-enter"
+                   required>
             <div class="site-enter-submit">
               <button type="submit" aria-label="Войти на сайт" class="btn registration-button">Войти</button>
               <ul class="registration-list">
@@ -80,7 +82,7 @@
           </form>
         </section>
       </li>
-      <li class="user-nav-basket">
+      <li class="user-nav-item">
         <button type="button" class="button button-basket button-active"
                 aria-label="Перейти в корзину, в которой находятся 2 товара">
           <span class="icon basket-icon"></span>
@@ -160,7 +162,6 @@
     <section>
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form class="filters" action="https://echo.htmlacademy.ru" method="post">
-
         <div class="filters-row">
           <div class="filters-sort-fields">
             <label class="filters-label">Сортировка:</label>
@@ -192,7 +193,6 @@
               <span class="filters-range-btn  filters-btn-max" tabindex="0"></span>
             </div>
           </div>
-
           <div class="filters-fatness-fields">
             <label class="filters-label">Жирность:</label>
             <ul class="filters-radio-inputs">
@@ -215,17 +215,18 @@
             </ul>
           </div>
         </div>
-
         <div class="filters-row">
           <div class="filters-fillers-fields">
             <label class="filters-label">Наполнители:</label>
             <ul class="filters-checkbox-inputs">
               <li class="filters-checkbox-item">
-                <input class="filters-checkbox" type="checkbox" name="сhocolate" id="сhocolate" value="шоколадные" checked>
+                <input class="filters-checkbox" type="checkbox" name="сhocolate" id="сhocolate" value="шоколадные"
+                       checked>
                 <label class="filters-checkbox-label" for="сhocolate">шоколадные</label>
               </li>
               <li class="filters-checkbox-item">
-                <input class="filters-checkbox" type="checkbox" name="sugar-flours" id="sugar-flours" value="сахарные присыпки" checked>
+                <input class="filters-checkbox" type="checkbox" name="sugar-flours" id="sugar-flours"
+                       value="сахарные присыпки" checked>
                 <label class="filters-checkbox-label" for="sugar-flours">сахарные присыпки</label>
               </li>
               <li class="filters-checkbox-item">
@@ -252,7 +253,7 @@
     </section>
     <section class="catalog">
       <h2 class="visually-hidden">Ассортимент мороженого</h2>
-      <ul class="catalog-list">
+      <ul class="catalog-list catalog-main">
         <li class="ice-cream-name">
           <div class="ice-cream-card">
             <img src="img/ice_cream_1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267"
@@ -285,7 +286,7 @@
                  height="267">
             <p class="price">355₽<span class="weight">/кг</span></p>
             <a href="" class="assortment-link link">
-              <p class="assortment-item">Сливочно-клубничное с присыпкой из белого шоколада</p>
+              <p class="assortment-item">Сливочно-клубничное с <br> присыпкой из белого шоколада</p>
             </a>
           </div>
           <div class="ice-cream-action">
@@ -309,7 +310,7 @@
             <img src="img/ice_cream_5.png" alt="Сливочное с брусничным джемом " width="267" height="267">
             <p class="price">325₽<span class="weight">/кг</span></p>
             <a href="" class="assortment-link link">
-              <p class="assortment-item">Сливочное с брусничным джемом</p>
+              <p class="assortment-item">Сливочное с брусничным <br> джемом</p>
             </a>
           </div>
           <div class="ice-cream-action">
@@ -354,10 +355,10 @@
         </li>
         <li class="ice-cream-name">
           <div class="ice-cream-card">
-            <img src="./img/ice_cream_11.png" alt="Сливочно-ванильное с кусочками шоколада" width="267" height="267">
+            <img src="./img/ice_cream_9.png" alt="Сливочно-ванильное с кусочками шоколада" width="267" height="267">
             <p class="price">440₽<span class="weight">/кг</span></p>
             <a href="" class="assortment-link link">
-              <p class="assortment-item">Сливочно-ванильное с кусочками шоколада</p>
+              <p class="assortment-item">Сливочно-ванильное с <br> кусочками шоколада</p>
             </a>
           </div>
           <div class="ice-cream-action">
@@ -369,7 +370,7 @@
             <img src="img/ice_cream_10.png" alt="Сливочноe с ментоловым сиропом" width="267" height="267">
             <p class="price">435₽<span class="weight">/кг</span></p>
             <a href="" class="assortment-link link">
-              <p class="assortment-item">Сливочное с ментоловым сиропом</p>
+              <p class="assortment-item">Сливочное с ментоловым <br> сиропом</p>
             </a>
           </div>
           <div class="ice-cream-action">
