@@ -27,7 +27,7 @@ var storageName = getItem('name');
 var storageEmail = getItem('email');
 
 var handleClose = function (e) {
-  if (e.path.includes(form)) {
+  if (form.contains(e.target)) {
     return;
   }
 
@@ -66,6 +66,7 @@ close.addEventListener('click', function (e) {
   popup.classList.remove('modal-show');
   popup.classList.remove('modal-error');
   document.body.classList.remove('modal-overlay');
+
 
   window.removeEventListener('click', handleClose);
 });
