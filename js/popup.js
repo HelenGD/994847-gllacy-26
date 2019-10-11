@@ -23,9 +23,6 @@ var message = popup.querySelector('#feedback-message');
 var userName = popup.querySelector('#user-name');
 var email = popup.querySelector('#user-email');
 
-var storageName = getItem('name');
-var storageEmail = getItem('email');
-
 var handleClose = function (e) {
   if (form.contains(e.target)) {
     return;
@@ -39,6 +36,9 @@ var handleClose = function (e) {
 };
 
 button.addEventListener('click', function (e) {
+  var storageName = getItem('name');
+  var storageEmail = getItem('email');
+
   if (storageName && !storageEmail) {
     userName.value = storageName;
     email.focus();
