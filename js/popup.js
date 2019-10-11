@@ -67,7 +67,6 @@ close.addEventListener('click', function (e) {
   popup.classList.remove('modal-error');
   document.body.classList.remove('modal-overlay');
 
-
   window.removeEventListener('click', handleClose);
 });
 

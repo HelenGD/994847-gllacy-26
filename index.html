@@ -6,7 +6,7 @@
   <title>HTML Academy: Глейси</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.min.css">
-  <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <input class="slider-input" type="radio" id="slide-1" name="slider" checked>
@@ -50,9 +50,9 @@
       </nav>
       <ul class="user-nav">
         <li class="user-nav-item">
-          <button type="button" class="button button-search">
+          <a href="search.html" class="button button-search">
             <span class="visually-hidden">поиск по сайту</span>
-          </button>
+          </a>
           <section class="site-search user-nav-popup">
             <h2 class="visually-hidden">Поиск по сайту</h2>
             <form action="https://echo.htmlacademy.ru" method="post" class="search-field">
@@ -63,10 +63,9 @@
           </section>
         </li>
         <li class="user-nav-item">
-          <button type="button" class="button enter-button" aria-label="Войти на сайт">
-            <span class="icon enter-icon"></span>
+          <a href="login.html" class="button enter-button icon enter-icon" aria-label="Войти на сайт">
             Вход
-          </button>
+          </a>
           <section class="enter-site user-nav-popup">
             <h2 class="visually-hidden">Как войти на сайт</h2>
             <form action="https://echo.htmlacademy.ru" method="post">
@@ -79,18 +78,21 @@
               <div class="site-enter-submit">
                 <button type="submit" aria-label="Войти на сайт" class="btn registration-button">Войти</button>
                 <ul class="registration-list">
-                  <li class="registration-item"><a href="" class="link registration-link">Забыли пароль?</a></li>
-                  <li class="registration-item"><a href="" class="link registration-link">Новая регистрация</a></li>
+                  <li class="registration-item">
+                    <a href="recovery.html" class="link link-dark">Забыли пароль?</a>
+                  </li>
+                  <li class="registration-item">
+                    <a href="registration.html" class="link link-dark">Новая регистрация</a>
+                  </li>
                 </ul>
               </div>
             </form>
           </section>
         </li>
         <li class="user-nav-item">
-          <button type="button" class="button basket-button" aria-label="Перейти в корзину">
-            <span class="icon basket-icon"></span>
+          <a href="checkout.html" class="button basket-button icon basket-icon" aria-label="Перейти в корзину">
             Пусто
-          </button>
+          </a>
         </li>
       </ul>
       <section class="contacts">
@@ -166,7 +168,7 @@
               </a>
             </div>
             <div class="ice-cream-action">
-              <button type="button" class="btn ice-cream-btn">Быстрый просмотр</button>
+              <a href="view.html" class="btn ice-cream-btn">Быстрый просмотр</a>
             </div>
           </li>
           <li class="ice-cream-name hit-list">
@@ -180,7 +182,7 @@
               </a>
             </div>
             <div class="ice-cream-action">
-              <button type="button" class="btn ice-cream-btn">Быстрый просмотр</button>
+              <a href="view.html" class="btn ice-cream-btn">Быстрый просмотр</a>
             </div>
           </li>
           <li class="ice-cream-name hit-list">
@@ -190,11 +192,11 @@
                    width="267" height="267">
               <p class="price">355₽<span class="weight">/кг</span></p>
               <a href="" class="assortment-link link">
-                <p class="assortment-item">Сливочно-клубничное с<br>присыпкой из белого шоколада</p>
+                <p class="assortment-item">Сливочно-клубничное с присыпкой из белого шоколада</p>
               </a>
             </div>
             <div class="ice-cream-action">
-              <button type="button" class="btn ice-cream-btn">Быстрый просмотр</button>
+              <a href="view.html" class="btn ice-cream-btn">Быстрый просмотр</a>
             </div>
           </li>
           <li class="ice-cream-name hit-list">
@@ -208,7 +210,7 @@
               </a>
             </div>
             <div class="ice-cream-action">
-              <button type="button" class="btn ice-cream-btn">Быстрый просмотр</button>
+              <a href="view.html" class="btn ice-cream-btn">Быстрый просмотр</a>
             </div>
           </li>
         </ul>
@@ -217,25 +219,21 @@
         <h2 class="advantages-title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного
           производства на развес</h2>
         <ul class="advantages-list">
-          <li class="advantage">
-            <span class="advantages-icon advantages-icon-icecream"></span>
+          <li class="advantage advantages-icon advantages-icon-icecream">
             <p class="advantage-item">Все наше мороженое изготавливается на собственном производстве, с использованием
               современного оборудования и&nbsp;проверенных временем технологий.</p>
           </li>
-          <li class="advantage">
-            <span class="advantages-icon advantages-icon-cow"></span>
+          <li class="advantage advantages-icon advantages-icon-cow">
             <p class="advantage-item">Закупка ингредиентов производится только у проверенных фермерских хозяйств и
               компаний, с которыми нас
               связывает долговременное сотрудничество.</p>
           </li>
-          <li class="advantage">
-            <span class="advantages-icon advantages-icon-eco"></span>
+          <li class="advantage advantages-icon advantages-icon-eco">
             <p class="advantage-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего
               качества. Все
               дополнительные ингридиенты и добавки произведены из натурального, экологически чистого сырья.</p>
           </li>
-          <li class="advantage">
-            <span class="advantages-icon advantages-icon-thermometer"></span>
+          <li class="advantage advantages-icon advantages-icon-thermometer">
             <p class="advantage-item">Доставка нашего мороженого до заказчиков осуществляется в&nbsp;специальном
               термопаке,
               который не дает
@@ -246,8 +244,11 @@
       <div class="wrap-container">
         <article class="news">
           <p class="news-rubric">Новое в нашем блоге</p>
-          <h2 class="news-title"><a href="" class="link blog-link">10 способов сервировки<br> фруктовых щербетов к<br>
-            столу</a>
+          <h2 class="news-title">
+            <a href="" class="link link-dark blog-link">
+              10 способов сервировки фруктовых щербетов к
+              столу
+            </a>
           </h2>
         </article>
         <div class="subscribition-container">
@@ -285,7 +286,7 @@
           </p>
           <p class="working-hours">
             Для заказов по телефону:<br>
-            <a href="tel:+78124502525" class="link phone bold-text-phone">8 812 450-25-25</a><br>
+            <a href="tel:+78124502525" class="link link-dark phone bold-text-phone">8 812 450-25-25</a><br>
             (с 10 до 20 ежедневно)
           </p>
           <div class="feedback">
@@ -314,24 +315,28 @@
   </main>
   <div class="main-container">
     <footer class="page-footer-index">
-      <section>
+      <section class="page-footer-col">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <ul class="social-links">
-          <li class="social-item"><a href="" class="social-link" aria-label="Gllacy Shop в Твиттере">
-            <span class="social-icon icon-twitter"></span>
-          </a></li>
-          <li class="social-item"><a href="" class="social-link" aria-label="Gllacy Shop в Инстаграме">
-            <span class="social-icon icon-instagram"></span>
-          </a></li>
-          <li class="social-item"><a href="" class="social-link" aria-label="Gllacy Shop в Фейсбуке">
-            <span class="social-icon icon-facebook"></span>
-          </a></li>
-          <li class="social-item"><a href="" class="social-link" aria-label="Gllacy Shop во Вконтакте">
-            <span class="social-icon icon-vkontakte"></span>
-          </a></li>
+          <li class="social-item">
+            <a href="https://twitter.com" class="social-link social-icon icon-twitter"
+               aria-label="Gllacy Shop в Твиттере"></a>
+          </li>
+          <li class="social-item">
+            <a href="https://instagram.com" class="social-link social-icon icon-instagram"
+               aria-label="Gllacy Shop в Инстаграме"></a>
+          </li>
+          <li class="social-item">
+            <a href="https://facebook.com" class="social-link social-icon icon-facebook"
+               aria-label="Gllacy Shop в Фейсбуке"></a>
+          </li>
+          <li class="social-item">
+            <a href="https://vk.com" class="social-link social-icon icon-vkontakte"
+               aria-label="Gllacy Shop во Вконтакте"></a>
+          </li>
         </ul>
       </section>
-      <section class="additional-information">
+      <section class="additional-information page-footer-col">
         <h2 class="visually-hidden">Дополнительная информация</h2>
         <ul class="extra-nav">
           <li class="extra-nav-item"><a href="" class="extra-link link suppliers-link">Для поставщиков</a></li>
@@ -340,7 +345,7 @@
           <li class="extra-nav-item"><a href="" class="extra-link link">Экологические стандарты</a></li>
         </ul>
       </section>
-      <div class="developer-container">
+      <div class="developer-container page-footer-col">
         <section>
           <h2 class="visually-hidden">Создатель верстки</h2>
           <span class="logo-academy"></span>
