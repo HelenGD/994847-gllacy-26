@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.min.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.min.css">
   <title>HTML Academy: Глейси</title>
 </head>
 <body class="page-catalog">
@@ -19,7 +19,7 @@
         </a>
         <ul class="menu-list">
           <li class="menu-item item-active">
-            <a href="" class="item-link item-link-selected">
+            <a href="catalog.html" class="item-link item-link-selected">
               <span>Каталог</span>
             </a>
             <ul class="submenu">
@@ -87,7 +87,7 @@
       </li>
       <li class="user-nav-item">
         <a href="checkout.html" class="button button-basket button-active icon basket-icon"
-                aria-label="Перейти в корзину, в которой находятся 2 товара">
+           aria-label="Перейти в корзину, в которой находятся 2 товара">
           2 товара
         </a>
         <section class="user-nav-popup basket-popup">
@@ -174,7 +174,6 @@
                 <option value="expensive">сначала дорогие</option>
                 <option value="fat">по жирности</option>
               </select>
-              <span class="filters-select-indicator"></span>
             </div>
           </div>
           <div class="filters-price-fields">
@@ -288,7 +287,7 @@
                  height="267">
             <p class="price">355₽<span class="weight">/кг</span></p>
             <a href="choose.html" class="assortment-link link">
-              <p class="assortment-item">Сливочно-клубничное с присыпкой из белого шоколада</p>
+              <p class="assortment-item">Сливочно-клубничное с присыпкой&nbsp;из белого шоколада</p>
             </a>
           </div>
           <div class="ice-cream-action">
@@ -360,7 +359,7 @@
             <img src="./img/ice_cream_9.png" alt="Сливочно-ванильное с кусочками шоколада" width="267" height="267">
             <p class="price">440₽<span class="weight">/кг</span></p>
             <a href="choose.html" class="assortment-link link">
-              <p class="assortment-item">Сливочно-ванильное с кусочками шоколада</p>
+              <p class="assortment-item">Сливочно-ванильное с кусочками&nbsp;шоколада</p>
             </a>
           </div>
           <div class="ice-cream-action">
@@ -408,7 +407,7 @@
     <div class="pagination">
       <h2 class="visually-hidden">Порядковая нумерация страниц</h2>
       <a class="page-previous" aria-label="Перейти на предыдущую страницу"></a>
-      <a class="link-page link-page-active" aria-label="Вы находитесь на первой странице">1</a>
+      <a class="link-page link-page-active" href="first-page.html" aria-label="Вы находитесь на первой странице">1</a>
       <a class="link-page" href="second-page.html" aria-label="Перейти на вторую страницу">2</a>
       <a class="link-page" href="third-page.html" aria-label="Перейти на третью страницу">3</a>
       <a class="link-page" href="fourth-page.html" aria-label="Перейти на четвертую страницу">4</a>
@@ -441,7 +440,8 @@
     <section class="additional-information page-footer-col">
       <h2 class="visually-hidden">Дополнительная информация</h2>
       <ul class="extra-nav">
-        <li class="extra-nav-item"><a href="suppliers.html" class="extra-link link suppliers-link">Для поставщиков</a></li>
+        <li class="extra-nav-item"><a href="suppliers.html" class="extra-link link suppliers-link">Для поставщиков</a>
+        </li>
         <li class="extra-nav-item"><a href="documents.html" class="extra-link link">Наши документы</a></li>
         <li class="extra-nav-item"><a href="production.html" class="extra-link link">О производстве</a></li>
         <li class="extra-nav-item"><a href="standars.html" class="extra-link link">Экологические стандарты</a></li>

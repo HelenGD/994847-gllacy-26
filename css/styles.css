@@ -147,15 +147,12 @@ img {
   font-size: 16px;
   line-height: 18px;
   font-weight: bold;
-  color: inherit;
-  border-bottom: 1px solid rgba(255, 255, 255, .2);
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   color: #ffffff;
   margin: 0;
   list-style-type: none;
-  line-height: 18px;
   padding: 7px 15px 6px;
   border-radius: 20px;
   border: none;
@@ -226,6 +223,8 @@ img {
 
 .icon::before {
   content: '';
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   width: 21px;
   height: 19px;
@@ -350,8 +349,7 @@ img {
 }
 
 .news-title .link {
-  text-decoration: underline;
-  border: 0;
+  border-width: 2px;
 }
 
 .subscribition {
@@ -454,6 +452,11 @@ img {
   color: #999;
 }
 
+.input::-ms-input-placeholder {
+  font-weight: 400;
+  color: #999;
+}
+
 .input::placeholder {
   font-weight: 400;
   color: #999;
@@ -538,7 +541,7 @@ img {
 }
 
 .assortment-item {
-  margin: 0;
+  margin: 0 4px;
   display: inline;
   font-weight: 500;
   font-size: 16px;
@@ -699,6 +702,10 @@ img {
 
 .catalog-hit {
   padding-top: 5px;
+}
+
+.catalog {
+  padding-top: 6px;
 }
 
 .catalog-list {
@@ -901,7 +908,7 @@ img {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
-  margin-left: 11px;
+  margin-left: 16px;
 }
 
 .pin {
@@ -1063,6 +1070,7 @@ img {
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 0;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -1093,6 +1101,8 @@ img {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
 }
 
@@ -1121,7 +1131,7 @@ img {
 }
 
 .news {
-  width: 562px;
+  width: 560px;
   min-height: 220px;
   padding: 23px 22px;
   color: #323232;
@@ -1139,6 +1149,8 @@ img {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 40px;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
 }
 
@@ -1193,7 +1205,7 @@ img {
 .pagination {
   margin-bottom: 31px;
   text-align: right;
-  margin-top: 43px;
+  margin-top: 41px;
   margin-right: 2px;
 }
 
@@ -1352,7 +1364,7 @@ img {
 
 .menu-item {
   position: relative;
-  padding: 0;
+  padding: 5px 0;
 }
 
 .menu-item:hover .submenu {
@@ -1563,7 +1575,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 16px;
+  margin-top: 17px;
 }
 
 .filters-label {
@@ -1598,7 +1610,6 @@ img {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  outline: none;
   cursor: pointer;
 }
 
@@ -1606,27 +1617,26 @@ img {
   display: none;
 }
 
-.filters-select:hover,
-.filters-select:focus {
+.filters-select:hover {
   color: #323232;
 }
 
-.filters-select-indicator::after {
+.filters-select-field::after {
   content: '';
   position: absolute;
-  top: 16px;
-  right: 14px;
-  width: 8px;
-  height: 10px;
-  border-top: 5px solid #fff;
-  border-left: 4px solid transparent;
-  border-right: 4px solid transparent;
+  top: 14px;
+  right: 16px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid #fff;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
   border-bottom: 0;
   pointer-events: none;
 }
 
-.filters-select:hover + .filters-select-indicator::after,
-.filters-select:focus + .filters-select-indicator::after {
+.filters-select-field:hover::after,
+.filters-select-field:focus::after {
   border-top-color: #333;
 }
 
