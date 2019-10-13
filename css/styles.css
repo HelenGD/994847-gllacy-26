@@ -111,6 +111,13 @@ img {
   position: relative;
   margin-bottom: 10px;
   padding-top: 9px;
+  padding-left: 1px;
+  padding-right: 4px;
+}
+
+.page-header-catalog {
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 .header-container {
@@ -153,7 +160,7 @@ img {
   color: #ffffff;
   margin: 0;
   list-style-type: none;
-  padding: 7px 15px 6px;
+  padding: 7px 14px 6px;
   border-radius: 20px;
   border: none;
 }
@@ -208,8 +215,8 @@ img {
   height: 35px;
   min-width: 35px;
   padding: 0 16px;
-  margin-right: 5px;
-  margin-left: 5px;
+  margin-right: 0;
+  margin-left: 10px;
   margin-bottom: 4px;
   border-radius: 18.5px;
   font-size: 14px;
@@ -280,7 +287,7 @@ img {
 
 .advantages {
   background-image: url('../img/background-wafer.png');
-  padding: 26px 22px;
+  padding: 26px 21px;
   margin-bottom: 38px;
   border-radius: 15px;
   background-color: #f5f5dc;
@@ -724,6 +731,7 @@ img {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-top: 35px;
+  padding-right: 4px;
 }
 
 .assortment-link {
@@ -739,7 +747,7 @@ img {
   height: 45px;
   text-align: left;
   margin: 0;
-  margin-top: -67px;
+  margin-top: -64px;
   margin-bottom: 26px;
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
   letter-spacing: 1px;
@@ -965,7 +973,7 @@ img {
   height: 61px;
   position: absolute;
   top: 0;
-  left: 2px;
+  left: 1px;
   z-index: 5;
 }
 
@@ -1004,7 +1012,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 270px;
+  width: 267px;
   text-align: center;
   position: relative;
   margin-bottom: 38px;
@@ -1180,7 +1188,7 @@ img {
 .contacts {
   position: absolute;
   top: 100%;
-  right: 0;
+  right: 2px;
   text-align: right;
   z-index: 1;
   font-weight: bold;
@@ -1490,7 +1498,7 @@ img {
 .special-discount {
   width: 562px;
   border-radius: 15px;
-  padding: 20px 21px 24px 21px;
+  padding: 20px 20px 24px 20px;
 }
 
 .raspberry-discount {
