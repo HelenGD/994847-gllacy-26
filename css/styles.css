@@ -212,12 +212,12 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 35px;
-  min-width: 35px;
+  height: 31px;
+  min-width: 31px;
   padding: 0 16px;
   margin-right: 0;
   margin-left: 10px;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
   border-radius: 18.5px;
   font-size: 14px;
   line-height: 16px;
@@ -1223,7 +1223,7 @@ img {
 }
 
 .site-search {
-  padding: 19px 15px;
+  padding: 20px 15px;
   width: 341px;
   -webkit-box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
@@ -1261,7 +1261,7 @@ img {
 }
 
 .input-search {
-  height: 45px;
+  height: 44px;
   width: 100%;
   border-radius: 5px;
   border: solid 1px #d3d3d2;
@@ -1272,7 +1272,7 @@ img {
 }
 
 .enter-site {
-  width: 278px;
+  width: 277px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -1284,11 +1284,11 @@ img {
   padding-left: 19px;
   padding-right: 17px;
   padding-top: 20px;
-  padding-bottom: 17px;
+  padding-bottom: 21px;
 }
 
 .input-enter {
-  height: 45px;
+  height: 44px;
   padding-left: 12px;
   width: 100%;
   margin-bottom: 20px;
@@ -1310,7 +1310,7 @@ img {
 .registration-item {
   list-style: none;
   font-size: 13px;
-  line-height: 20px;
+  line-height: 21px;
 }
 
 .registration-list {
@@ -1319,21 +1319,22 @@ img {
 }
 
 .registration-button {
-  width: 103px;
+  padding: 0 25px;
 }
 
 .submenu {
   display: none;
   position: absolute;
   top: 100%;
-  left: -9px;
+  left: -6px;
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-bottom: 4px;
   -webkit-box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
-  border-radius: 10px;
+  border-radius: 5px;
   font-size: 14px;
   line-height: 16px;
   overflow: hidden;
@@ -1342,37 +1343,52 @@ img {
 }
 
 .submenu-item {
-  padding: 0 8px;
+  padding: 2px 0;
+  position: relative;
 }
 
-.submenu-item:not(:first-child):hover,
-.submenu-item:not(:first-child):focus {
+.submenu-item:not(:first-child) .submenu-link:hover,
+.submenu-item:not(:first-child) .submenu-link:focus {
   background-color: #fbded7;
 }
 
-.submenu-item:not(:first-child):active {
+.submenu-item:not(:first-child) .submenu-link:active {
   background-color: #F6B5A5;
 }
 
-.submenu-item.submenu-item-active,
-.submenu-item.submenu-item-active:hover,
-.submenu-item.submenu-item-active:active {
+.submenu-item .submenu-link.submenu-link-active,
+.submenu-item .submenu-link.submenu-link-active:hover,
+.submenu-item .submenu-link.submenu-link-active:active {
   background-color: #d07058;
 }
 
-.submenu-item.submenu-item-active .submenu-link {
+.submenu-item .submenu-link.submenu-link-active {
   color: #fff;
-}
-
-.submenu-item:first-child .submenu-link {
-  border-bottom: 1px solid #d3d3d2;
 }
 
 .submenu-link {
   color: #323232;
-  padding: 10px 14px;
+  padding: 6px 22px 6px 20px;
   display: block;
   margin: 0;
+}
+
+.selected-item {
+  padding-bottom: 3px;
+}
+
+.selected-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 6px;
+  right: 7px;
+  border-bottom: 1px solid #d3d3d2;
+}
+
+.selected-item .submenu-link {
+  padding: 9px 20px;
+  font-weight: bold;
 }
 
 .menu-item {
@@ -1392,7 +1408,7 @@ img {
   font-size: 13px;
   line-height: 16px;
   border-radius: 5px;
-  padding: 0 13px 20px 13px;
+  padding: 0 17px 20px 13px;
   z-index: 100;
 }
 
@@ -1432,7 +1448,7 @@ img {
 
 .basket {
   width: 100%;
-  border-spacing: 0 19px;
+  border-spacing: 0 16px;
   border-bottom: 1px solid #d3d3d2;
 }
 
@@ -1442,7 +1458,7 @@ img {
 }
 
 .basket td.remove-product {
-  padding-top: 5px;
+  padding-top: 8px;
   text-align: center;
   width: 28px;
 }
@@ -1451,10 +1467,14 @@ img {
   width: 247px;
 }
 
+.basket td.product-img-info {
+  padding-top: 2px;
+}
+
 .basket td.product-info,
 .basket td.weight-and-price,
 .basket td.total-price {
-  padding-top: 9px;
+  padding-top: 12px;
   padding-left: 5px;
 }
 
@@ -1469,7 +1489,13 @@ img {
   font-size: 15px;
   line-height: 18px;
   color: #323232;
-  margin: 10px 0;
+  margin: 14px 0 13px 0;
+  margin-right: -5px;
+}
+
+.btn-order {
+  padding: 0 14px;
+  margin-right: -3px;
 }
 
 .showcase {
@@ -1503,7 +1529,7 @@ img {
 .special-discount {
   width: 562px;
   border-radius: 15px;
-  padding: 20px 20px 24px 20px;
+  padding: 20px 22px 24px 20px;
 }
 
 .raspberry-discount {
@@ -1877,7 +1903,7 @@ img {
 
 .modal {
   position: fixed;
-  padding: 17px 25px 27px 25px;
+  padding: 17px 26px 27px 24px;
   color: #323232;
   background-color: #f8f7f4;
   border-radius: 10px;
@@ -1932,7 +1958,7 @@ img {
 .popup-close {
   position: absolute;
   top: 15px;
-  right: 16px;
+  right: 17px;
   width: 18px;
   height: 17px;
   padding: 0;
