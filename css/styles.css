@@ -355,10 +355,6 @@ img {
   margin-top: 5px;
 }
 
-.news-title .link {
-  border-width: 2px;
-}
-
 .subscribition {
   color: #5A5A5A;
   background-color: #F8F7F4;
@@ -815,6 +811,13 @@ img {
   font-size: 24px;
   line-height: 30px;
   padding: 0;
+  border: 0;
+  box-shadow: inset 0 -3px 0 #fff, inset 0 -5px 0 #323232;
+}
+
+.blog-link:hover,
+.blog-link:active {
+  box-shadow: inset 0 -3px 0 #fff, inset 0 -5px 0 #E84D37;
 }
 
 .link-page {
